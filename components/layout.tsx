@@ -1,0 +1,39 @@
+import { FunctionComponent } from "react";
+import styled from "styled-components";
+import Head from "next/head";
+
+export const Layout: FunctionComponent = ({ children }) => {
+  return (
+    <Body>
+      <Head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+        />
+        <title>Stephen F | SnipeyDev</title>
+        <meta name="twitter:creator" content="@SnipeyDev" />
+        <meta name="twitter:site" content="@SnipeyDev" />
+      </Head>
+      <Content>
+        {children}
+      </Content>
+    </Body>
+  );
+};
+
+const Body = styled.div`
+  display: flex;
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.color};
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+`;
+
+const Content = styled.div`
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
