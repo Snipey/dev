@@ -42,17 +42,16 @@ export const ProfileContainer = styled.div`
   display: block;
   width: 100%;
   padding-top: 222px;
-  background-image: url("/bg.jpg");
   background-position: center; 
-  background-size: 100% 200%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("/bg.jpg");
   &::after {
-	display: block;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0D0D0D 100%);
-	margin-top: -270px;
-	height: 100px;
-	width: 100%;
-	content: '';
+    display: block;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0D0D0D 100%);
+    margin-top: -270px;
+    height: 100px;
+    width: 100%;
+    content: '';
   }
 `;

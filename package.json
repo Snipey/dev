@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snipey/clips.git"
+    "url": "git+https://github.com/Snipey/dev.git"
   },
-  "author": "Timothy Cole",
+  "author": "Stephen Freerking",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

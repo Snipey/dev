@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SocialContainer = styled.ul`
 	padding-top: 20px;
 	text-align: center;
+	padding-inline-start: 0px;
 	li {
 		border-radius: 100%;
 		background: #232323;

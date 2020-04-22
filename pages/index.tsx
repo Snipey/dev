@@ -6,7 +6,7 @@ import { timeSince } from "../lib/timeSince";
 import { IndexBody, IndexContainer } from "../components/body";
 import { ProfileContainer, ProfileImage, ProfileItem, ProfileSubItem } from "../components/profile";
 import { SocialContainer, SocialItem } from '../components/social';
-import { ProjectsContainer, ProjectsItem } from "../components/projects";
+import { ProjectsContainer, ProjectsItem, ProjectsTitle, ProjectsDescription, ProjectsImage } from '../components/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
@@ -67,20 +67,46 @@ const Index: NextPage<Props> = ({ error }) => {
               </a>
             </SocialContainer>
         </ProfileContainer>
-        {/* <ProjectsContainer>
+        {/* <BlogContainer>
+          <p>Latest Posts</p>
+          <div className="projects">
+            <BlogItem>
+
+            </BlogItem>
+            <BlogItem>
+              
+            </BlogItem>
+            <BlogItem>
+            
+            </BlogItem>
+          </div>
+        </BlogContainer> */}
+        <ProjectsContainer>
           <p>Latest Projects</p>
           <div className="projects">
             <ProjectsItem>
-
+              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsTitle>Notify</ProjectsTitle>
+              <ProjectsDescription>
+                Team member at Notify
+              </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
-              
+              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsTitle>PulseJS Docs</ProjectsTitle>
+              <ProjectsDescription>
+                Documentation for the javascript state management lib PulseJS
+              </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
-            
+              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsTitle>Spork League</ProjectsTitle>
+              <ProjectsDescription>
+                Discord pug bot for making custom 10 man games with automatic voice channels and auto teams.
+              </ProjectsDescription>
             </ProjectsItem>
           </div>
-        </ProjectsContainer> */}
+        </ProjectsContainer>
       </IndexContainer>
     </IndexBody>
   );
