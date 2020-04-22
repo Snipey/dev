@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Snipey's clips 👋</h1>
+<h1 align="center">Welcome to Snipey's Portfolio 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/clips" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/clips.svg">
@@ -20,13 +20,11 @@
   </a>
 </p>
 
-> Site to display gaming clips 
+> Personal protfolio site with blog and stats built in
 
-> Inspired by https://tim.rip
+### 🏠 [Homepage](https://snipey.dev)
 
-### 🏠 [Homepage](https://clips.snipey.dev)
-
-### ✨ [Demo](https://clips.snipey.dev)
+### ✨ [Demo](https://snipey.dev)
 
 ## Install
 
