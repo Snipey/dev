@@ -38,8 +38,12 @@ export const ProjectsItem = styled.div`
 	width: 30%;
 	margin-right: 10px;
 	display: flex;
+
 	flex-direction: column;
 	align-items: center;
+	img.notify {
+		background: #3C60FF;
+	}
 	&:last-child {
 		margin-right: 0px;
 	}
@@ -50,8 +54,9 @@ export const ProjectsImage = styled.img`
 	border: solid 3px #1C1C1C;
 	border-radius: 100%;
 	position: relative;
+	background: #222;
 	width: 100px;
-	margin-top: -60px;
+	margin-top: -45px;
 	margin-bottom: 7px;
 	&:hover {
 		border: solid 3px #666;

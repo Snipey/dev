@@ -15,15 +15,11 @@ export const ProfileSubItem = styled.p`
 `;
 
 export const ProfileItem = styled.p`
-  display: flex;
-  align-items: stretch; /* Default */
-  justify-content: center;
   width: 100%;
-  margin: 0;
-  padding: 0;
   font-size: 50px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 `;
 
 export const ProfileImage = styled.img`
@@ -41,6 +37,7 @@ export const ProfileImage = styled.img`
 export const ProfileContainer = styled.div`
   display: block;
   width: 100%;
+  text-align: center;
   padding-top: 222px;
   background-position: center; 
   background-size: cover;

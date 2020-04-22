@@ -85,21 +85,21 @@ const Index: NextPage<Props> = ({ error }) => {
           <p>Latest Projects</p>
           <div className="projects">
             <ProjectsItem>
-              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsImage className="notify" src="/notify-icon-white.png"/>
               <ProjectsTitle>Notify</ProjectsTitle>
               <ProjectsDescription>
                 Team member at Notify
               </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
-              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsImage src="/logo.png"/>
               <ProjectsTitle>PulseJS Docs</ProjectsTitle>
               <ProjectsDescription>
                 Documentation for the javascript state management lib PulseJS
               </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
-              <ProjectsImage src="https://picsum.photos/200"/>
+              <ProjectsImage src="/spork-league.jpg"/>
               <ProjectsTitle>Spork League</ProjectsTitle>
               <ProjectsDescription>
                 Discord pug bot for making custom 10 man games with automatic voice channels and auto teams.
