@@ -70,6 +70,12 @@ const Index: NextPage<Props> = ({ error }) => {
                   <FontAwesomeIcon className="fa" icon={["fas", "film"]} />
                 </SocialItem>
               </a>
+              <a href="https://www.patreon.com/snipeydev">
+                <SocialItem>
+                  <FontAwesomeIcon className="fa" icon={["fab", "patreon"]} />
+                </SocialItem>
+              </a>
+              
             </SocialContainer>
         </ProfileContainer>
         {/* <BlogContainer>
