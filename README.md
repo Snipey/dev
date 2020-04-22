@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to clips 👋</h1>
+<h1 align="center">Welcome to Snipey's clips 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/clips" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/clips.svg">
@@ -12,12 +12,17 @@
   <a href="https://github.com/Snipey/dev/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/Snipey/clips" />
   </a>
+    <a href="https://twitter.com/SnipeyDev" target="_blank">
+    <img alt="Docker Image CI" src="https://github.com/Snipey/dev/workflows/Docker%20Image%20CI/badge.svg" />
+  </a>
   <a href="https://twitter.com/SnipeyDev" target="_blank">
     <img alt="Twitter: SnipeyDev" src="https://img.shields.io/twitter/follow/SnipeyDev.svg?style=social" />
   </a>
 </p>
 
-> Site to display gaming clips
+> Site to display gaming clips 
+
+> Inspired by https://tim.rip
 
 ### 🏠 [Homepage](https://clips.snipey.dev)
 
@@ -63,5 +68,3 @@ Give a ⭐️ if this project helped you!
 Copyright © 2020 [Stephen Freerking](https://github.com/Snipey).<br />
 This project is [MIT](https://github.com/Snipey/dev/blob/master/LICENSE) licensed.
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
