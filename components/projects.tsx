@@ -9,8 +9,7 @@ export const ProjectsContainer = styled.div`
     font-size: 36px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    flex: auto;
-    flex-direction: row;
+
 	padding: 5px;
 	p {
 		text-align: center;
@@ -18,7 +17,17 @@ export const ProjectsContainer = styled.div`
 		margin-bottom: 75px;
 	}
 	div.projects {
-		display: flex;
+		/* display: flex; */
+		@media only screen and (min-width: 850px) {
+			display: flex;
+			justify-content: center;
+		}
+		@media only screen and (min-width: 1000px) {
+			display: flex;
+			justify-content: center;
+		}
+		@media only screen and (min-width: 1500px) {
+		}
 	}
 	margin-bottom: 2em;
 `;
@@ -26,7 +35,7 @@ export const ProjectsContainer = styled.div`
 export const ProjectsItem = styled.div`
 	border-radius: 10px;
 	background: #1F1F1F;
-	width: 435px;
+	width: 30%;
 	margin-right: 10px;
 	display: flex;
 	flex-direction: column;
