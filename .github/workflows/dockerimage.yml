@@ -9,36 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Notify slack success
-      if: success()
-      id: slack # IMPORTANT: reference this step ID value in future Slack steps
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-      uses: voxmedia/github-action-slack-notify-build@v1
-      with:
-        channel: app-alerts
-        status: STARTING
-        color: warning
-
     - uses: actions/checkout@v2
-      
-    - name: Build Container
     - uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: snipeydev/portfolio
         tags: latest
-
-    - name: Notify slack success
-      if: success()
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-      uses: voxmedia/github-action-slack-notify-build@v1
-      with:
-        # Updates existing message from the first step
-        message_id: ${{ steps.slack.outputs.message_id }}
-        channel: app-alerts
-        status: SUCCESS
-        color: good
-
