@@ -13,7 +13,7 @@ library.add(fab, faEnvelope, faFilm)
 
 import "isomorphic-fetch";
 
-import "../global.css";
+import "../../global.css";
 import { ThemeProvider } from "styled-components";
 
 const theme = {
