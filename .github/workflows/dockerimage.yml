@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: Notify slack success
       if: success()
       id: slack # IMPORTANT: reference this step ID value in future Slack steps
@@ -21,6 +20,8 @@ jobs:
         status: STARTING
         color: warning
 
+    - uses: actions/checkout@v2
+      
     - name: Build Container
     - uses: docker/build-push-action@v1
       with:
