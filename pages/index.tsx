@@ -29,7 +29,7 @@ const Index: NextPage<Props> = ({ error }) => {
     <IndexBody>
       <IndexContainer>
         <ProfileContainer>
-            <ProfileImage src="https://picsum.photos/200"/>
+            <ProfileImage src="/profile.png"/>
             <ProfileItem>
               Stephen Freerking
             </ProfileItem>

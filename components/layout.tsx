@@ -13,6 +13,10 @@ export const Layout: FunctionComponent = ({ children }) => {
         <title>Stephen F | SnipeyDev</title>
         <meta name="twitter:creator" content="@SnipeyDev" />
         <meta name="twitter:site" content="@SnipeyDev" />
+        <meta property="og:title" content="Stephen F | SnipeyDev"/>
+        <meta property="og:description" content="Fullstack software developer for hire"/>
+        <meta property="og:image" content="/profile.png"/>
+        <meta property="og:url" content="https://snipey.dev"/>
       </Head>
       <Content>
         {children}

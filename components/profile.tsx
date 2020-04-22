@@ -8,7 +8,7 @@ export const ProfileSubItem = styled.p`
   justify-content: center;
   width: 100%;
   margin: 0;
-  color: #666666;
+  color: rgb(138, 138, 138);
   padding: 0;
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
@@ -27,6 +27,7 @@ export const ProfileImage = styled.img`
   border-radius: 100%;
   border: solid 7px #FFF;
   width: 165px;
+  height: 165px;
   background: #FFFFFF;
   margin-bottom: 10px;
   box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.6);
@@ -34,6 +35,7 @@ export const ProfileImage = styled.img`
   margin-left: auto;
   margin-right: auto;
 `;
+
 export const ProfileContainer = styled.div`
   display: block;
   width: 100%;
