@@ -29,6 +29,7 @@ const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
+        
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

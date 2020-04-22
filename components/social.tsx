@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const SocialContainer = styled.ul`
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding-top: 20px;
 	text-align: center;
 	padding-inline-start: 0px;

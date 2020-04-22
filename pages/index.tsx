@@ -13,6 +13,7 @@ import Link from 'next/link';
 interface Props {
   error?: string;
 }
+
 function sec2time(timeInSeconds: number) {
   let pad = function(num, size) { return ('000' + num).slice(size * -1); };
   let time: number = timeInSeconds;
@@ -21,6 +22,7 @@ function sec2time(timeInSeconds: number) {
 
   return pad(minutes, 2) + ':' + pad(seconds, 2);
 }
+
 const Index: NextPage<Props> = ({ error }) => {
   if (error) return <ErrorPage err={error} statusCode={500} />;
   return (

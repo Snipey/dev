@@ -38,7 +38,10 @@ export const ProfileContainer = styled.div`
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 222px;
+  padding-top: 2em;
+  @media only screen and (min-width: 1500px) {
+    padding-top: 222px;
+	}
   background-position: center; 
   background-size: cover;
   background-repeat: no-repeat;

@@ -9,24 +9,20 @@ export const ProjectsContainer = styled.div`
     font-size: 36px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-
+	margin-right: 2em;
+	margin-left: 2em;
 	padding: 5px;
 	p {
 		text-align: center;
-		width: 100%;
 		margin-bottom: 75px;
 	}
 	div.projects {
-		/* display: flex; */
-		@media only screen and (min-width: 850px) {
-			display: flex;
-			justify-content: center;
-		}
-		@media only screen and (min-width: 1000px) {
-			display: flex;
-			justify-content: center;
-		}
-		@media only screen and (min-width: 1500px) {
+		display: flex;
+		justify-content: center;
+		
+		width: 100%;
+		@media only screen and (max-width: 1500px) {
+			flex-direction: column;
 		}
 	}
 	margin-bottom: 2em;
@@ -35,10 +31,9 @@ export const ProjectsContainer = styled.div`
 export const ProjectsItem = styled.div`
 	border-radius: 10px;
 	background: #1F1F1F;
-	width: 30%;
 	margin-right: 10px;
 	display: flex;
-
+	width: 30%;
 	flex-direction: column;
 	align-items: center;
 	img.notify {
@@ -48,6 +43,20 @@ export const ProjectsItem = styled.div`
 		margin-right: 0px;
 	}
 	box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+	@media only screen and (max-width: 850px) {
+		margin-top: 1.6em;
+		width: 100%;
+	}
+	@media only screen and (min-width: 850px) {
+		margin-top: 2em;
+		width: 100%;
+	}
+	@media only screen and (min-width: 1000px) {
+
+	}
+	@media only screen and (min-width: 1501px) {
+		width: 30%;
+	}
 `;
 
 export const ProjectsImage = styled.img`
