@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to Snipey's Portfolio 👋</h1>
-<p>
+<p align="center">
   <a href="https://www.npmjs.com/package/clips" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/clips.svg">
   </a>
