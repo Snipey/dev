@@ -19,6 +19,7 @@ export const Layout: FunctionComponent = ({ children }) => {
         <meta property="og:url" content="https://snipey.dev"/>
       </Head>
       <Content>
+        <HeaderImage />
         {children}
       </Content>
     </Body>
@@ -40,4 +41,15 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+`;
+
+export const HeaderImage = styled.div`
+  position: absolute;
+  background-color: #FFF;
+  display: block;
+  height: 570px;
+  width: 100%;
+  background-size: 100% 570px;
+  background-image: linear-gradient(to bottom,rgb(255,255,255,0),#0D0D0D), url('./bg.jpg');
+  z-index: -100;
 `;

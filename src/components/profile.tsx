@@ -44,16 +44,4 @@ export const ProfileContainer = styled.div`
   @media only screen and (min-width: 1500px) {
     padding-top: 222px;
 	}
-  background-position: center; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/bg.jpg");
-  &::after {
-    display: block;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0D0D0D 100%);
-    margin-top: -270px;
-    height: 100px;
-    width: 100%;
-    content: '';
-  }
 `;

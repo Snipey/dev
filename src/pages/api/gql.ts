@@ -45,32 +45,7 @@ const typeDefs = gql`
 `;
 
 let clips: Clip[] = [];
-let categories: Category[] = [];
 let lastUpdated = null;
-
-const updateCategories = async (): Promise<void> => {
-  if (
-    lastUpdated !== null &&
-    (new Date().getTime() - lastUpdated.getTime()) / 1000 < 600
-  )
-    return;
-
-  const data: Categories = await fetch(
-    `https://developers.medal.tv/v1/categories`,
-    {
-      headers: {
-        Authorization: token,
-      },
-    }
-  ).then((data) => data.json());
-
-  categories = data.contentObjects.map((category: Category) => ({
-    ...category,
-  }));
-  console.log(categories);
-  lastUpdated = new Date();
-};
-updateCategories();
 
 const updateClips = async (): Promise<void> => {
   if (
@@ -99,19 +74,11 @@ updateClips();
 
 const resolvers = {
   Query: {
-    async categories(): Promise<Category[]> {
-      await updateCategories();
-      return categories;
-    },
-    async category(_: any, { categoryId }: { categoryId: string }): Promise<Category> {
-      await updateCategories();
-      return categories.filter((cat) => cat.categoryId.toString() === categoryId)[0];
-    },
-    async clips(): Promise<Clip[]> {
+    async posts(): Promise<Clip[]> {
       await updateClips();
       return clips;
     },
-    async clip(_: any, { contentId }: { contentId: string }): Promise<Clip> {
+    async post(_: any, { contentId }: { contentId: string }): Promise<Clip> {
       await updateClips();
       return clips.filter((clip) => clip.contentId === contentId)[0];
     },

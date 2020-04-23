@@ -97,13 +97,14 @@ const Index: NextPage<Props> = ({ error }) => {
         <ProjectsContainer>
           <p>Latest Projects</p>
           <div className="projects">
+            {/* TODO Add Functional component to render all the data from an array */}
             <ProjectsItem>
               <a href="https://notify.me">
                 <ProjectsImage className="notify" src="/notify-icon-white.png"/>
               </a>
               <ProjectsTitle>Notify</ProjectsTitle>
               <ProjectsDescription>
-                Team member at Notify
+                Support Staff/Technical Writer
               </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
@@ -112,7 +113,7 @@ const Index: NextPage<Props> = ({ error }) => {
               </a>
               <ProjectsTitle>PulseJS Docs</ProjectsTitle>
               <ProjectsDescription>
-                Documentation for the javascript state management lib PulseJS
+                Documentation
               </ProjectsDescription>
             </ProjectsItem>
             <ProjectsItem>
@@ -127,6 +128,7 @@ const Index: NextPage<Props> = ({ error }) => {
           </div>
         </ProjectsContainer>
       </IndexContainer>
+      <HeaderImage />
     </IndexBody>
   );
 };
@@ -135,3 +137,14 @@ const Index: NextPage<Props> = ({ error }) => {
 // };
 
 export default Index;
+
+const HeaderImage = styled.div`
+  position: absolute;
+  background-color: #FFF;
+  display: block;
+  height: 570px;
+  width: 100%;
+  background-size: 100% 570px;
+  background-image: linear-gradient(to bottom,rgb(255,255,255,0),#0D0D0D), url('./bg.jpg');
+  z-index: -100;
+`;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Project Components
 export const ProjectsContainer = styled.div`
-	margin-top: 270px;
+	margin-top: 70px;
     position: relative;
     color: #666;
     font-size: 36px;

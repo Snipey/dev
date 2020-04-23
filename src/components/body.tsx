@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const IndexBody = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
+  z-index: 100;
 `;
 
 export const IndexContainer = styled.div`
