@@ -1,8 +1,5 @@
 <h1 align="center">Welcome to Snipey's clips 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/clips" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/clips.svg">
-  </a>
+<p align=""center>
   <a href="https://github.com/Snipey/dev#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
