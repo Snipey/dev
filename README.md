@@ -1,8 +1,5 @@
-<h1 align="center">Welcome to Snipey's clips 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/clips" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/clips.svg">
-  </a>
+<h1 align="center">Snipey Dev 👋</h1>
+<p align=""center>
   <a href="https://github.com/Snipey/dev#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -22,11 +19,9 @@
 
 > Site to display gaming clips 
 
-> Inspired by https://tim.rip
+### 🏠 [Homepage](https://snipey.dev)
 
-### 🏠 [Homepage](https://clips.snipey.dev)
-
-### ✨ [Demo](https://clips.snipey.dev)
+### ✨ [Demo](https://snipey.dev)
 
 ## Install
 
