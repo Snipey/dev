@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import { fetcher } from "../lib/fetcher";
 import ErrorPage from "./_error";
 import styled from "styled-components";
 import { timeSince } from "../lib/timeSince";

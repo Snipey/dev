@@ -13,14 +13,16 @@ library.add(fab, faEnvelope, faFilm)
 
 import "isomorphic-fetch";
 
-import "../global.css";
+import "../../global.css";
 import { ThemeProvider } from "styled-components";
 
 const theme = {
   background: "#0D0D0D",
   darker: "#1f2734",
   accent: "#ffa228",
-  color: "#ffffff",
+  color: "#1f1f1f",
+  hover: "#9f9f9f",
+  text: "#fff",
   grey: "#656d7a",
   error: "#bb3e3e",
 };
