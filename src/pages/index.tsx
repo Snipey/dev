@@ -9,13 +9,11 @@ import { SocialContainer, SocialItem } from '../components/social';
 import { ProjectsContainer, ProjectsItem, ProjectsTitle, ProjectsDescription, ProjectsImage } from '../components/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import ReactGA from 'react-ga';
+
 
 interface Props {
   error?: string;
 }
-ReactGA.initialize('UA-176799769-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 function sec2time(timeInSeconds: number) {
   let pad = function (num, size) { return ('000' + num).slice(size * -1); };

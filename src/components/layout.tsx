@@ -13,10 +13,24 @@ export const Layout: FunctionComponent = ({ children }) => {
         <title>Stephen F | SnipeyDev</title>
         <meta name="twitter:creator" content="@SnipeyDev" />
         <meta name="twitter:site" content="@SnipeyDev" />
-        <meta property="og:title" content="Stephen F | SnipeyDev"/>
-        <meta property="og:description" content="Fullstack software engineer for hire"/>
-        <meta property="og:image" content="/profile.png"/>
-        <meta property="og:url" content="https://snipey.dev"/>
+        <meta property="og:title" content="Stephen F | SnipeyDev" />
+        <meta property="og:description" content="Fullstack software engineer for hire" />
+        <meta property="og:image" content="/profile.png" />
+        <meta property="og:url" content="https://snipey.dev" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176799769-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'UA-176799769-1');
+            </script>            
+            `,
+          }}
+        />
       </Head>
       <Content>
         <HeaderImage />
