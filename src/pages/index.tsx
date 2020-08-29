@@ -9,13 +9,16 @@ import { SocialContainer, SocialItem } from '../components/social';
 import { ProjectsContainer, ProjectsItem, ProjectsTitle, ProjectsDescription, ProjectsImage } from '../components/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import ReactGA from 'react-ga';
 
 interface Props {
   error?: string;
 }
+ReactGA.initialize('UA-176799769-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function sec2time(timeInSeconds: number) {
-  let pad = function(num, size) { return ('000' + num).slice(size * -1); };
+  let pad = function (num, size) { return ('000' + num).slice(size * -1); };
   let time: number = timeInSeconds;
   let minutes = Math.floor(time / 60) % 60;
   let seconds = Math.floor(time - minutes * 60);
@@ -29,56 +32,56 @@ const Index: NextPage<Props> = ({ error }) => {
     <IndexBody>
       <IndexContainer>
         <ProfileContainer>
-            <ProfileImage src="/profile.png"/>
-            <ProfileItem>
-              Stephen Freerking
+          <ProfileImage src="/profile.png" />
+          <ProfileItem>
+            Stephen Freerking
             </ProfileItem>
-            <ProfileSubItem>
-              Full Stack Engineer Located in California
+          <ProfileSubItem>
+            Full Stack Engineer Located in California
             </ProfileSubItem>
-            <SocialContainer>
-              <a href="https://twitter.com/snipeydev">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "twitter"]} />
-                </SocialItem>
-              </a>
-              <a href="https://github.com/snipey">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "github"]} />
-                </SocialItem>
-              </a>
-              <a href="mailto:contact@snipey.dev">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fas", "envelope"]} />
-                </SocialItem>
-              </a>
-              <a href="https://discord.getsporked.lol">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "discord"]} />
-                </SocialItem>
-              </a>
-              <a href="https://paypal.me/snipeydev">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "paypal"]} />
-                </SocialItem>
-              </a>
-              <a href="https://www.linkedin.com/in/stephenfdev/">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "linkedin"]} />
-                </SocialItem>
-              </a>
-              <a href="https://clips.snipey.dev">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fas", "film"]} />
-                </SocialItem>
-              </a>
-              <a href="https://www.patreon.com/snipeydev">
-                <SocialItem>
-                  <FontAwesomeIcon className="fa" icon={["fab", "patreon"]} />
-                </SocialItem>
-              </a>
-              
-            </SocialContainer>
+          <SocialContainer>
+            <a href="https://twitter.com/snipeydev">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "twitter"]} />
+              </SocialItem>
+            </a>
+            <a href="https://github.com/snipey">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "github"]} />
+              </SocialItem>
+            </a>
+            <a href="mailto:contact@snipey.dev">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fas", "envelope"]} />
+              </SocialItem>
+            </a>
+            <a href="https://discord.getsporked.lol">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "discord"]} />
+              </SocialItem>
+            </a>
+            <a href="https://paypal.me/snipeydev">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "paypal"]} />
+              </SocialItem>
+            </a>
+            <a href="https://www.linkedin.com/in/stephenfdev/">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "linkedin"]} />
+              </SocialItem>
+            </a>
+            <a href="https://clips.snipey.dev">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fas", "film"]} />
+              </SocialItem>
+            </a>
+            <a href="https://www.patreon.com/snipeydev">
+              <SocialItem>
+                <FontAwesomeIcon className="fa" icon={["fab", "patreon"]} />
+              </SocialItem>
+            </a>
+
+          </SocialContainer>
         </ProfileContainer>
         {/* <BlogContainer>
           <p>Latest Posts</p>
@@ -100,7 +103,7 @@ const Index: NextPage<Props> = ({ error }) => {
             {/* TODO Add Functional component to render all the data from an array */}
             <ProjectsItem>
               <a href="https://notify.me">
-                <ProjectsImage className="notify" src="/notify-icon-white.png"/>
+                <ProjectsImage className="notify" src="/notify-icon-white.png" />
               </a>
               <ProjectsTitle>Notify</ProjectsTitle>
               <ProjectsDescription>
@@ -109,7 +112,7 @@ const Index: NextPage<Props> = ({ error }) => {
             </ProjectsItem>
             <ProjectsItem>
               <a href="https://pulsejs.org">
-                <ProjectsImage src="/logo.png"/>
+                <ProjectsImage src="/logo.png" />
               </a>
               <ProjectsTitle>PulseJS Docs</ProjectsTitle>
               <ProjectsDescription>
@@ -118,7 +121,7 @@ const Index: NextPage<Props> = ({ error }) => {
             </ProjectsItem>
             <ProjectsItem>
               <a href="https://getsporked.lol">
-                <ProjectsImage src="/spork-league.jpg"/>
+                <ProjectsImage src="/spork-league.jpg" />
               </a>
               <ProjectsTitle>Spork League</ProjectsTitle>
               <ProjectsDescription>
