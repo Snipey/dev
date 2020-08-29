@@ -1,7 +1,7 @@
 {
-  "name": "clips",
+  "name": "snipeydev",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio home page",
   "main": "index.js",
   "scripts": {
     "dev": "next",
