@@ -18,17 +18,18 @@ export const Layout: FunctionComponent = ({ children }) => {
         <meta property="og:image" content="/profile.png" />
         <meta property="og:url" content="https://snipey.dev" />
         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-176799769-1"
+        />
+
+        <script
           dangerouslySetInnerHTML={{
-            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176799769-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'UA-176799769-1');
-            </script>            
-            `,
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'UA-176799769-1');
+              `,
           }}
         />
       </Head>
