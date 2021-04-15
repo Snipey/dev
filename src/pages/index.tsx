@@ -1,14 +1,16 @@
 import { NextPage } from "next";
-import { fetcher } from "../lib/fetcher";
+
 import ErrorPage from "./_error";
 import styled from "styled-components";
-import { timeSince } from "../lib/timeSince";
 import { IndexBody, IndexContainer } from "../components/body";
 import { ProfileContainer, ProfileImage, ProfileItem, ProfileSubItem } from "../components/profile";
 import { SocialContainer, SocialItem } from '../components/social';
 import { ProjectsContainer, ProjectsItem, ProjectsTitle, ProjectsDescription, ProjectsImage } from '../components/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
+
+
+import Particles from 'react-particles-js';
+import { isAbsolute } from "path";
 
 
 interface Props {
@@ -29,6 +31,53 @@ const Index: NextPage<Props> = ({ error }) => {
   return (
     <IndexBody>
       <IndexContainer>
+        <Particles
+          style={{
+            position: 'absolute',
+          }}
+          params={{
+            "particles": {
+              "number": {
+                "value": 60,
+                "density": {
+                  "enable": true,
+                  "value_area": 1500
+                }
+              },
+              "line_linked": {
+                "enable": true,
+                "opacity": 0.02
+              },
+              "move": {
+                "direction": "right",
+                "speed": 0.05
+              },
+              "size": {
+                "value": 1
+              },
+              "opacity": {
+                "anim": {
+                  "enable": true,
+                  "speed": 1,
+                  "opacity_min": 0.05
+                }
+              }
+            },
+            "interactivity": {
+              "events": {
+                "onclick": {
+                  "enable": true,
+                  "mode": "push"
+                }
+              },
+              "modes": {
+                "push": {
+                  "particles_nb": 1
+                }
+              }
+            },
+            "retina_detect": true
+          }} />
         <ProfileContainer>
           <ProfileImage src="/profile.png" />
           <ProfileItem>
@@ -100,36 +149,17 @@ const Index: NextPage<Props> = ({ error }) => {
           <div className="projects">
             {/* TODO Add Functional component to render all the data from an array */}
             <ProjectsItem>
-              <a href="https://notify.me">
-                <ProjectsImage className="notify" src="/notify-icon-white.png" />
-              </a>
-              <ProjectsTitle>Notify</ProjectsTitle>
-              <ProjectsDescription>
-                Support Staff/Technical Writer
-              </ProjectsDescription>
-            </ProjectsItem>
-            <ProjectsItem>
-              <a href="https://pulsejs.org">
-                <ProjectsImage src="/logo.png" />
-              </a>
-              <ProjectsTitle>PulseJS Docs</ProjectsTitle>
-              <ProjectsDescription>
-                Documentation
-              </ProjectsDescription>
-            </ProjectsItem>
-            <ProjectsItem>
               <a href="https://getsporked.lol">
                 <ProjectsImage src="/spork-league.jpg" />
               </a>
               <ProjectsTitle>Spork League</ProjectsTitle>
               <ProjectsDescription>
-                Discord pug bot for making custom 10 man games with automatic voice channels and auto teams.
+                Discord PUG bot for making custom 10 man games with automatic voice channels and auto teams.
               </ProjectsDescription>
             </ProjectsItem>
           </div>
         </ProjectsContainer>
       </IndexContainer>
-      <HeaderImage />
     </IndexBody>
   );
 };
@@ -139,13 +169,3 @@ const Index: NextPage<Props> = ({ error }) => {
 
 export default Index;
 
-const HeaderImage = styled.div`
-  position: absolute;
-  background-color: #FFF;
-  display: block;
-  height: 570px;
-  width: 100%;
-  background-size: 100% 570px;
-  background-image: linear-gradient(to bottom,rgb(255,255,255,0),#0D0D0D), url('./bg.jpg');
-  z-index: -100;
-`;
